@@ -25,11 +25,17 @@ Receiving objects: 100% (35/35), 17.29 KiB | 17.29 MiB/s, done.
 Resolving deltas: 100% (7/7), done.
 theia@theia-terellmcross:/home/project$ 
 
+theia@theia-terellmcross:/home/project$ curl -s https://api.github.com/repos/tmc121/mcino-Introduction-to-Git-and-GitHub | jq -r '.clone_url'
+https://github.com/tmc121/mcino-Introduction-to-Git-and-GitHub.git
+
 
 # FORK-REPO
 theia@theia-terellmcross:/home/project$ curl -s https://api.github.com/repos/tmc121/mcino-Introduction-to-Git-and-GitHub | jq -r '.parent.clone_url'
 https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub.git
 theia@theia-terellmcross:/home/project$ 
+
+theia@theia-terellmcross:/home/project$ curl -s https://api.github.com/repos/tmc121/mcino-Introduction-to-Git-and-GitHub | jq -r '.parent.clone_url'
+https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub.git
 
 # MERGE-BRANCHES
 theia@theia-terellmcross:/home/project/mcino-Introduction-to-Git-and-GitHub
