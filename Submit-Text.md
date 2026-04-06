@@ -15,6 +15,17 @@ https://github.com/tmc121/github-final-project/blob/36ebed1511bdb0a4f724a0fd53d4
 simple-interest.sh
 https://github.com/tmc121/github-final-project/blob/c9eda4fdf82c264ebe99ddbf51b1af356ce7ae23/simple-interest.sh
 
+# FORK-REPO
+theia@theia-terellmcross:/home/project/mcino-Introduction-to-Git-and-name>/mcino-Introduction-to-Git
+GitHub$ curl curl -s https://api.git
+hub.com/repos/tmc121/mcino-Introduction-to-Git-and-GitHub | jq -r '.parent.clone_url'
+https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub.git
+theia@theia-terellmcross:/home/project/mcino-Intro
+duction-to-Git-and-GitHub$ 
+
+#
+
+
 
 //
 theia@theia-terellmcross:/home/project$ cd mcino-Introduction-to-Git-and-GitHub
