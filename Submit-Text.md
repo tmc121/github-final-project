@@ -15,15 +15,40 @@ https://github.com/tmc121/github-final-project/blob/36ebed1511bdb0a4f724a0fd53d4
 simple-interest.sh
 https://github.com/tmc121/github-final-project/blob/c9eda4fdf82c264ebe99ddbf51b1af356ce7ae23/simple-interest.sh
 
-# FORK-REPO
-theia@theia-terellmcross:/home/project/mcino-Introduction-to-Git-and-name>/mcino-Introduction-to-Git
-GitHub$ curl curl -s https://api.git
-hub.com/repos/tmc121/mcino-Introduction-to-Git-and-GitHub | jq -r '.parent.clone_url'
-https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub.git
-theia@theia-terellmcross:/home/project/mcino-Intro
-duction-to-Git-and-GitHub$ 
 
-#
+# Clone
+theia@theia-terellmcross:/home/project$ git clone https://github.com/tmc121/mcino-Introduction-to-Git-and-GitHub.git
+Cloning into 'mcino-Introduction-to-Git-and-GitHub'...
+remote: Enumerating objects: 35, done.
+remote: Total 35 (delta 0), reused 0 (delta 0), pack-reused 35 (from 1)
+Receiving objects: 100% (35/35), 17.29 KiB | 17.29 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
+theia@theia-terellmcross:/home/project$ 
+
+
+# FORK-REPO
+theia@theia-terellmcross:/home/project$ curl -s https://api.github.com/repos/tmc121/mcino-Introduction-to-Git-and-GitHub | jq -r '.parent.clone_url'
+https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub.git
+theia@theia-terellmcross:/home/project$ 
+
+# MERGE-BRANCHES
+theia@theia-terellmcross:/home/project/mcino-Introduction-to-Git-and-GitHub
+$ git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+theia@theia-terellmcross:/home/project/mcino-Introduction-to-Git-and-GitHub
+$ git push origin bug-fix-typo
+Username for 'https://github.com': tmc121
+Password for 'https://tmc121@github.com': 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'bug-fix-typo' on GitHub by visiting:
+remote:      https://github.com/tmc121/mcino-Introduction-to-Git-and-GitHub/pull/new/bug-fix-typo
+remote: 
+To https://github.com/tmc121/mcino-Introduction-to-Git-and-GitHub.git
+ * [new branch]      bug-fix-typo -> bug-fix-typo
 
 
 
